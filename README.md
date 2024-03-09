@@ -1,2 +1,2 @@
-# plugin-dataset-examples
-A Morpheus plugin containing several examples of dataset providers.
+# Morpheus Plugin Dataset Examples
+A Morpheus plugin containing examples of dataset providers.

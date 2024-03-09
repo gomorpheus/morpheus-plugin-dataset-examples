@@ -40,7 +40,7 @@ class ExternalApiDatasetProvider extends AbstractDatasetProvider<Map, Long> {
 	}
 
 	Observable<Map> list(DatasetQuery query) {
-		Map authConfig = apiService.getAuthConfig()
+		Map authConfig = apiService.getAuthConfig(query.parameters)
 		ServiceResponse apiResults = apiService.listShips(authConfig)
 		if(apiResults.success) {
 			return Observable.fromIterable((List<Map>)apiResults.data)

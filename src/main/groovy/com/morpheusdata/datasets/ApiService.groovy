@@ -4,11 +4,11 @@ import com.morpheusdata.response.ServiceResponse
 
 class ApiService {
 
-	Map getAuthConfig() {
+	Map getAuthConfig(Map opts) {
 		return [
-			"url": "https://api.example.com",
-			"username": "example",
-			"password": "-U8e6f4!q.H"
+			"url": opts.apiUrl,
+			"username": opts.username,
+			"password": opts.password
 		]
 	}
 

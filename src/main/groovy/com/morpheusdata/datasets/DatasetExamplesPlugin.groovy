@@ -19,24 +19,24 @@ import com.morpheusdata.core.Plugin
 
 class DatasetExamplesPlugin extends Plugin {
 
-    @Override
-    String getCode() {
-        return 'dataset-examples'
-    }
+	@Override
+	String getCode() {
+		return 'dataset-examples'
+	}
 
-    @Override
-    void initialize() {
-        this.setName("Dataset Examples")
+	@Override
+	void initialize() {
+		this.setName("Dataset Examples")
 		this.registerProvider(new PluginApiDatasetProvider(this, this.morpheus))
 		this.registerProvider(new CollectionDatasetProvider(this, this.morpheus))
 		this.registerProvider(new ExternalApiDatasetProvider(this, this.morpheus))
 	}
 
-    /**
-     * Called when a plugin is being removed from the plugin manager (aka Uninstalled)
-     */
-    @Override
-    void onDestroy() {
-        //nothing to do for now
-    }
+	/**
+	 * Called when a plugin is being removed from the plugin manager (aka Uninstalled)
+	 */
+	@Override
+	void onDestroy() {
+		//nothing to do for now
+	}
 }

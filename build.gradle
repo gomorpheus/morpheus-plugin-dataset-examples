@@ -6,7 +6,7 @@ buildscript {
 		maven { url "https://nexus.bertramlabs.com/content/repositories/snapshots" }
     }
     dependencies {
-        classpath "com.github.johnrengelman:shadow:8.1.1"
+		classpath "com.github.jengelman.gradle.plugins:shadow:6.0.0"
         classpath "com.morpheusdata:morpheus-plugin-gradle:$morpheusPluginGradleVersion"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:$assetPipelineVersion"
     }
@@ -84,7 +84,7 @@ jar {
 				'Morpheus-Logo-Dark': 'assets/morpheus.svg',
 				'Morpheus-Labels': 'Plugin, Datasets',
 				'Morpheus-Repo': 'https://github.com/gomorpheus/morpheus-plugin-dataset-examples',
-				'Morpheus-Min-Appliance-Version': "7.0.0"
+				'Morpheus-Min-Appliance-Version': "6.2.9"
 		)
 	}
 }

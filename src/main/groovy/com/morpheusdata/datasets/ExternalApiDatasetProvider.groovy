@@ -6,7 +6,7 @@ import com.morpheusdata.core.data.DatasetInfo
 import com.morpheusdata.core.data.DatasetQuery
 import com.morpheusdata.core.providers.AbstractDatasetProvider
 import com.morpheusdata.response.ServiceResponse
-import io.reactivex.rxjava3.core.Observable
+import io.reactivex.Observable
 import groovy.util.logging.Slf4j
 
 @Slf4j
